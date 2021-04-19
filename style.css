@@ -1,0 +1,37 @@
+body
+{
+    background-size: cover;
+}
+.somme_france
+{
+    font-size: 15px;
+    color: blueviolet;
+}
+.speedDiv
+{
+    float: left;
+}
+.speedImage
+{
+    width: 200px;
+    border-radius: 100px;
+}
+#ssspppeeeddd
+{
+    margin: 15px;
+}
+#vol
+{
+    margin:15px;
+}
+.volDiv
+{
+    float: right;
+}
+
+canvas
+{
+    border-radius: 150px;
+    border: 10px solid rosybrown;
+    margin-top: 40px;
+}

@@ -27,9 +27,33 @@ function draw()
     circle(xlw,ylw,20);
     inNumberYLW = Number (ylw);
     remove_decimals = floor(inNumberYLW);
-    volume = remove_decimals/500;
+    volume = floor(remove_decimals/430);
     document.getElementById("vol").innerHTML="VOLUME="+volume;
     song.setVolume(volume);
+
+    circle(xrw,yrw,20)
+    if (yrw>0 && yrw<=86)
+    {
+        document.getElementById("ssspppeeeddd").innerHTML="SPEED=0.5x";
+        song.rate(0.5);
+    }else if (yrw>86 && yrw<=172)
+    {
+        document.getElementById("ssspppeeeddd").innerHTML="SPEED=1x";
+        song.rate(1);
+    }else if (yrw>172 && yrw<=258)
+    {
+        document.getElementById("ssspppeeeddd").innerHTML="SPEED=1.5x";
+        song.rate(1.5);
+    }else if (yrw>258 && yrw<=344)
+    {
+        document.getElementById("ssspppeeeddd").innerHTML="SPEED=2x";
+        song.rate(2);
+    }else if (yrw>344 && yrw<=430)
+    {
+        document.getElementById("ssspppeeeddd").innerHTML="SPEED=2.5x";
+        song.rate(2.5);
+    }
+
 }
 
 function preload()
@@ -59,3 +83,4 @@ function gotSUPER_BANANA(result)
         console.log("rightWristy= "+ xrw);
     }
 }
+
